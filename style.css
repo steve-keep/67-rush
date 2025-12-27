@@ -1,0 +1,62 @@
+body {
+    background-color: #556B2F; /* Dark Olive Green */
+    background-image:
+        radial-gradient(circle at 20% 20%, #8B4513 20%, transparent 21%), /* Saddle Brown */
+        radial-gradient(circle at 80% 80%, #2F4F4F 20%, transparent 21%), /* Dark Slate Gray */
+        radial-gradient(circle at 50% 50%, #6B8E23 10%, transparent 11%); /* Olive Drab */
+    background-size: 200px 200px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+.game-wrapper {
+    border: 5px solid #fff;
+    border-radius: 10px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    margin-top: 0;
+}
+
+#game-board {
+    border: 3px solid #fff;
+    background-color: #000;
+}
+
+.info-container {
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.controls {
+    margin-top: 10px;
+    display: none; /* Hidden by default */
+}
+
+.controls button {
+    font-size: 2em;
+    padding: 10px 20px;
+    margin: 0 5px;
+    border-radius: 5px;
+    border: 2px solid #fff;
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Show controls on mobile devices */
+@media (max-width: 768px) {
+    .controls {
+        display: block;
+    }
+}

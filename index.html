@@ -1,9 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Hello World!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>67 Rush</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Hello World!</h1>
+    <div class="game-wrapper">
+        <h1>67 Rush</h1>
+        <div class="info-container">
+            <span>Score: <span id="score">0</span></span>
+            <span>Time: <span id="time">120</span></span>
+        </div>
+        <canvas id="game-board" width="320" height="640"></canvas>
+        <div class="controls">
+            <button id="left">◀</button>
+            <button id="rotate">↻</button>
+            <button id="right">▶</button>
+            <button id="down">▼</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
 </body>
 </html>
